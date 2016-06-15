@@ -1,0 +1,93 @@
+/**
+PADDING 
+**/
+
+$padding-sizes: none, xsmall, small, medium, large, xlarge;
+
+.padding{
+	&--collapse{
+		@include set(margin-left,-$gutter-width);
+		@include set(margin-right,-$gutter-width);
+	}
+	
+	@mixin padding-classes($query) {
+		$padding: $gutter-width;
+		
+		&-#{$query}{			
+			@each $size in $padding-sizes{
+				@if $size == xsmall {$padding: ($gutter-width/4);} 
+				@else if$size == none {$padding: (0);} 
+				@else if$size == small {$padding: ($gutter-width);} 
+				@else if$size == medium {$padding: ($gutter-width*2);} 
+				@else if$size == large {$padding: ($gutter-width*5);}
+				@else if$size == xlarge {$padding: ($gutter-width*8);}
+				
+				&-gutters{
+					@include set(padding-left,$gutter-width);
+					@include set(padding-right,$gutter-width);
+					&--all{
+						@include set(padding-top,$gutter-width);
+						@include set(padding-bottom,$gutter-width);
+					}
+				}
+				
+				&-top--#{$size}{
+					@include set(padding-top,$padding);
+				}
+				&-right--#{$size}{
+					@include set(padding-right,$padding);
+				}
+				&-bottom--#{$size}{
+					@include set(padding-bottom,$padding);
+				}
+				&-left--#{$size}{
+					@include set(padding-left,$padding);
+				}
+				&-gutters--#{$size}{
+					@include set(padding-left,$padding);
+					@include set(padding-right,$padding);
+				}
+				&-all--#{$size}{
+					@include set(padding,$padding);
+				}
+				&-all--none{
+					@include set(padding,0);
+				}
+			}
+		}
+	}
+	@include padding-classes($query:xsu);
+	@media #{$xsmall-only}{
+		@include padding-classes($query:xso);
+	}
+	@media #{$small-up}{
+		@include padding-classes($query:smu);
+	}
+	@media #{$small-only}{
+		@include padding-classes($query:smo);
+	}
+	@media #{$medium-up}{
+		@include padding-classes($query:mdu);
+	}
+	@media #{$medium-only}{
+		@include padding-classes($query:mdo);
+	}
+	@media #{$large-up}{
+		@include padding-classes($query:lgu);
+	}
+	@media #{$large-only}{
+		@include padding-classes($query:lgo);
+	}
+	@media #{$xlarge-up}{
+		@include padding-classes($query:xlu);
+	}
+	@media #{$xlarge-only}{
+		@include padding-classes($query:xlo);
+	}
+	@media #{$xxlarge-up}{
+		@include padding-classes($query:xxlu);
+	}
+	@media #{$xxlarge-only}{
+		@include padding-classes($query:xxlo);
+	}
+}

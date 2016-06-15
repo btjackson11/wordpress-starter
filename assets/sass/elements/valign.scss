@@ -1,0 +1,45 @@
+// ADDED
+.valign{
+	&--top{vertical-align: top;}
+	&--center{vertical-align: center;}
+	&--bottom{vertical-align: bottom;}
+}
+
+// DEFAULT
+.valign--middle {
+    display: table;
+
+    > .cols, > .col {
+        display: table-cell;
+        vertical-align: middle;
+        @media #{$xsmall-up}{
+	        &.show-for-xsmall-up{
+		        display: table-cell !important;
+	        }
+        }
+        @media #{$small-up}{
+	        &.show-for-small-up{
+		        display: table-cell !important;
+	        }
+        }
+        @media #{$medium-up}{
+	        &.show-for-medium-up{
+		        display: table-cell !important;
+	        }
+        }
+        @media #{$large-up}{
+	        &.show-for-large-up{
+		        display: table-cell !important;
+	        }
+        }
+        @media #{$xlarge-up}{
+	        &.show-for-xlarge-up{
+		        display: table-cell !important;
+	        }
+        }
+    }
+
+    > .cols, > .col, > [class*="column"] + [class*="column"]:last-child {
+        float: none;
+    }
+}

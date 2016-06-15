@@ -1,0 +1,19 @@
+.bg-color{
+	&--black{background-color: $black;}
+	&--white{background-color: $white;}
+	&--gray{background-color: $gray;}
+	&--lightgray{background-color: $lightgray;}
+	&--darkgray{background-color: $darkgray;}
+	&--blue{background-color: $blue;}
+	&--offwhite{background-color: $offwhite;}
+	&--transparent{background-color: transparent;}
+}
+.color{
+	&--black{color: $black;}
+	&--white{color: $white;}
+	&--gray{color: $gray;}
+	&--lightgray{color: $lightgray;}
+	&--darkgray{color: $darkgray;}
+	&--blue{color: $blue;}
+	&--offwhite{color: $offwhite;}
+}

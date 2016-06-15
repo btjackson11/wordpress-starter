@@ -1,0 +1,60 @@
+/*-- BUTTON STYLES --*/
+button{
+	padding: 10px 0;
+	width: 225px;
+	margin: 1rem 0;
+}
+.button{
+	&--white{
+		outline: 3px solid white;
+		&:hover{
+			outline: 3px solid white;
+			background-color: white;
+			color: black;
+		}
+	}
+	&--blue{
+		outline: 3px solid #0c314c;
+		background-color: transparent;
+		border: none;
+		&:hover{
+			outline: 3px solid #0c314c;
+			background-color: #0c314c;
+			color: white;
+		}
+	}
+	&--yellow{
+		outline: 3px solid #fff200;
+		&:hover{
+			outline: 3px solid #fff200;
+			background-color: #fff200;
+			color: white;
+		}
+	}
+	&--green{
+		outline: 3px solid #3CC408;
+		&:hover{
+			outline: 3px solid #3CC408;
+			background-color: #3CC408;
+			color: white;
+		}
+	}
+}
+
+/*-- Default Style --*/
+/*
+.btn{
+	display:inline-block;
+	&-rounded{
+		@extend .btn;
+		@include set(padding,0.5rem 2.5rem 0.4rem);
+		text-align:center;
+		text-transform:uppercase;
+		&--orange{
+			@extend .btn-rounded;
+			color:$white;
+			background:$black;	 
+		}
+	}
+}
+*/

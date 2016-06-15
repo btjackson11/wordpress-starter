@@ -1,0 +1,42 @@
+//NORMALIZE
+@import "normalize";
+
+//SETTINGS
+@import "settings";
+
+//GLOBAL
+@import "app/functions";
+@import "app/mixins";
+@import "app/mediaqueries";
+@import "app/grid";
+@import "app/helpers";
+
+//ELEMENTS
+@import "elements/valign";
+@import "elements/img";
+@import "elements/btn";
+@import "elements/typography";
+@import "elements/color"; 
+
+//MODIFIERS
+@import "modifiers/position";
+@import "modifiers/display";
+@import "modifiers/padding";
+
+//MIXINS
+@import "mixins"; 
+
+
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}

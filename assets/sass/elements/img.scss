@@ -1,0 +1,9 @@
+.img{
+	border:0;
+	&--scaled{
+		@extend .img;
+		width:100%;
+		max-width: 100%;
+		height:auto;
+	}
+}
