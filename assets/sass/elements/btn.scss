@@ -40,21 +40,3 @@ button{
 		}
 	}
 }
-
-/*-- Default Style --*/
-/*
-.btn{
-	display:inline-block;
-	&-rounded{
-		@extend .btn;
-		@include set(padding,0.5rem 2.5rem 0.4rem);
-		text-align:center;
-		text-transform:uppercase;
-		&--orange{
-			@extend .btn-rounded;
-			color:$white;
-			background:$black;	 
-		}
-	}
-}
-*/

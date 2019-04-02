@@ -28,8 +28,8 @@
  * Edit the variables as per your project requirements.
  */
 
-var project              = 'newportfolio'; // Project Name.
-var projectURL           = 'http://localhost:8888/portfolio/may2016/'; // Project URL. Could be something like localhost:8888.
+var project              = 'projectname'; // Project Name.
+var projectURL           = 'http://localhost:8888/projectname/'; // Project URL. Could be something like localhost:8888.
 var productURL           = './'; // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
 
 
