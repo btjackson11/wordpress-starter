@@ -31,19 +31,6 @@ DISPLAY
 	&--0{opacity: 0;}
 	&--1{opacity: 1;}
 }
-.hide-for{
-	&--small{
-		display: none;
-		@media #{$medium-up}{
-			display: block;
-		}
-	}
-	&--medium{
-		@media #{$medium-up}{
-			display: none;
-		}
-	}
-}
 .cursor{
 	&--default{cursor: default;}
 	&--pointer{cursor: pointer;}
